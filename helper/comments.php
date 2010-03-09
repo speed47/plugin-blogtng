@@ -597,7 +597,7 @@ class blogtng_comment{
     }
 
     function tpl_number($link=true,$fmt='%d'){
-        if($link) echo '<a href="#comment_'.$this->data['cid'].'" class="blogtng_num">';
+        if($link) echo '<a href="#comment_'.$this->num.'" class="blogtng_num">';
         printf($fmt,$this->num);
         if($link) echo '</a>';
     }
